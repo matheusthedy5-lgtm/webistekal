@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Integral Tentu</title>  `
+<body>
+<section>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    
+
+    <a 
+        href="https://www.google.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="tombol-baru"
+    >
+       
+    </a>
+    </button>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
+    
+   
+</section>
+</body>
+</html>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="integral-container">
+        <h1>Kalkulator Integral Tentu</h1>
+        <p>Hitung dan Visualisasikan $\int_a^b f(x) dx$</p>
+
+        <div class="input-group">
+            <label for="fungsi">Fungsi f(x):</label>
+            <input type="text" id="fungsi" value="x*x" placeholder="Contoh: x*x, 2*x + 1">
+        </div>
+        
+        <div class="input-group batas-group">
+            <label for="batas_a">Batas Bawah (a):</label>
+            <input type="number" id="batas_a" value="1">
+            
+            <label for="batas_b">Batas Atas (b):</label>
+            <input type="number" id="batas_b" value="3">
+        </div>
+
+        <button onclick="hitungIntegral()">Hitung dan Gambar</button>
+
+        <div class="hasil-area">
+            <h2>Hasil Integral:</h2>
+            <p id="notasi-integral">$$\int_{a}^{b} f(x) dx = ?$$</p>
+            <p id="hasil-numerik">Nilai Integral Tentu (Metode Trapezoid): **Belum Dihitung**</p>
+        </div>
+
+        <div class="visualisasi-area">
+            <h2>Visualisasi Grafik</h2>
+            <canvas id="integralChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
